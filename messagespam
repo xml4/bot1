@@ -1,0 +1,12 @@
+Message = "xml4 on top / xml4♯4444"
+Wait_Time = .35
+
+repeat game:GetService("RunService").RenderStepped:Wait()
+for i=1,game.Players.NumPlayers do
+if game.Players:GetChildren()[0+1*i].Name == game.Players.LocalPlayer.Name then
+else
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/w "..game.Players:GetChildren()[0+1*i].Name.." "..Message,"All")
+wait(Wait_Time)
+end
+end
+until game.Players.LocalPlayer.Character.Humanoid.Health == 0
