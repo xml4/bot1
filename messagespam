@@ -1,5 +1,0 @@
-game:GetService("Players").PlayerAdded:Wait()
-
-while wait(1) do
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("test","All")
-end
