@@ -1,5 +1,5 @@
 Message = "xml4 on top / xml4♯4444"
-Wait_Time = .35
+Wait_Time = .001
 
 repeat game:GetService("RunService").RenderStepped:Wait()
 for i=1,game.Players.NumPlayers do
