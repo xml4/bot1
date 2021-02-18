@@ -11,7 +11,7 @@ getgenv().BOTLOL = true;
 while wait(1) do
 if getgenv().BOTLOL == true then
 
-power = 5 -- change this to make it more or less powerful
+power = 500 -- change this to make it more or less powerful
 
 game:GetService('RunService').Stepped:connect(function()
 game.Players.LocalPlayer.Character.Head.CanCollide = false
