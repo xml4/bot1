@@ -1,3 +1,5 @@
+game:GetService("Players").PlayerAdded:Wait()
+
 local RunService = game:GetService("RunService")
 function antiSit()
 if game.Players.LocalPlayer.Character.Humanoid:GetState() == Enum.HumanoidStateType.Seated then 
