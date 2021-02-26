@@ -33,7 +33,7 @@ local function newserver()
         coroutine.wrap(function()
             game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, servers[rand:NextInteger(1,#servers)], plr)
         end)()
-        wait(6.66)
+        wait(20)
     end
 end
 wait(2)
