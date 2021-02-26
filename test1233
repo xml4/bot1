@@ -91,9 +91,11 @@ for _,p in pairs(game:GetService("Players"):GetPlayers()) do
     end
 end
 
-pcall(function() cmdlp.Character.HumanoidRootPart.CFrame = game:GetService("Players"):GetPlayers()[math.random(1,#game:GetService("Players"):GetPlayers())].Character.HumanoidRootPart.CFrame end)
-wait(2)
-pcall(function() cmdlp.Character.HumanoidRootPart.CFrame = game:GetService("Players"):GetPlayers()[math.random(1,#game:GetService("Players"):GetPlayers())].Character.HumanoidRootPart.CFrame end)
-wait(2)
+for i,v in pairs(game.Players:GetChildren()) do
+     if v ~= game.Players.LocalPlayer then
+          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+          wait(0.8)
+     end
+end
 
 newserver()
